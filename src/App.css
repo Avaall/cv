@@ -640,8 +640,16 @@
     flex-direction: column;
 
     .perfil {
-      width: 100%;
+      width: auto;
+      height: auto;
       justify-content: center;
+
+      .image {
+        height: 100%;
+        max-height: 200px;
+        width: 100%;
+        max-width: 200px;
+      }
     }
     .information {
       width: 100%;
