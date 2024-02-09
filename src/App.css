@@ -313,7 +313,7 @@
         height: 200px;
 
         .image {
-          height: 100%;
+          height: 200px;
           width: fit-content;
           user-select: none;
         }
@@ -637,10 +637,23 @@
 
 @media (max-width: 768px) {
   .basics {
+    flex-direction: column;
+
+    .perfil {
+      width: 100%;
+      justify-content: center;
+    }
     .information {
+      width: 100%;
+
       .title {
         font-size: 2rem;
       }
+    }
+  }
+  .references {
+    .ref {
+      flex-direction: column;
     }
   }
 }
