@@ -543,6 +543,97 @@
     }
   }
 }
+.contact {
+  padding: 0 .5rem 2rem .5rem;
+  width: 100%;
+  max-width: 1276px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  gap: 1rem;
+
+  .title {
+    font-size: 2rem;
+    color: var(--coffee);
+
+    &::selection {
+      background: var(--orange);
+    }
+  }
+  .message {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: .3rem .5rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    text-align: center;
+    color: var(--white);
+    letter-spacing: 0;
+  }
+  .message.success {
+    background: rgb(0, 128, 0, .7);
+  }
+  .message.error {
+    background: rgb(255, 0, 0, .7);
+  }
+  .form {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    flex-direction: column;
+    padding: 2rem 0 0 0;
+    gap: 1rem;
+
+    .email, .asunto, .mensaje {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border: 1px solid var(--black);
+      padding: .3rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: var(--black);
+
+      &:focus {
+        border: 1px solid var(--coffee);
+        outline: none;
+      }
+    }
+    .mensaje {
+      height: 5rem;
+    }
+    .submit {
+      width: fit-content;
+      padding: .3rem 1rem;
+      margin: 0 auto;
+      border: 2px solid var(--coffee);
+      border-radius: 30px;
+      background: transparent;
+      color: var(--coffee);
+      font-weight: bold;
+
+      &:hover {
+        background: var(--coffee);
+        color: var(--white);
+      }
+    }
+  }
+}
+.portafolio {
+  margin: 0 auto;
+  padding: 0 .5rem 2rem .5rem;
+  width: fit-content;
+  display: none;
+
+  .url {
+    color: var(--black);
+    text-decoration: underline;
+  }
+}
 
 @media (max-width: 768px) {
   .basics {
@@ -563,7 +654,7 @@
   h1 {
     font-size: 18px !important;
   }
-  .controls {
+  .controls, .projects, .contact {
     display: none;
   }
   .basics {
@@ -581,10 +672,9 @@
   .name {
     font-size: 15px !important;
   }
-  .projects {
-    display: none;
-  }
   .references {
+    padding: 0 !important;
+
     .ref {
       flex-direction: column !important;
 
@@ -598,5 +688,8 @@
         padding: 0 !important;
       }
     }
+  }
+  .portafolio {
+    display: block !important;
   }
 }

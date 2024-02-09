@@ -7,6 +7,7 @@ import { Projects } from './components/Projects.jsx'
 import { References } from './components/References.jsx'
 import { Skills } from './components/Skills.jsx'
 import { Controls } from './components/Controls.jsx'
+import { Contact } from './components/Contact.jsx'
 import './App.css'
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
       <Education />
       <CertificatesLenguages />
       <References />
+      <Contact />
+      <section className="portafolio">
+        <a href="https://portafolio-andres.onrender.com/" target='_self' className='url'>Conoce mi portafolio</a>
+      </section>
     </>
   )
 }
