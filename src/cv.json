@@ -1,0 +1,213 @@
+{
+  "basics": {
+    "name": "Andrés Cifuentes Lozada",
+    "label": "Full Stack Developer enfocado en la construcción de productos con gran atención al detalle.",
+    "image": "https://avatars.githubusercontent.com/u/109237539?v=4",
+    "email": "anfecilo@gmail.com",
+    "phone": "+57 3115814061",
+    "location": {
+      "city": "Medellín",
+      "countryCode": "COL",
+      "country": "Colombia"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "Andrés Cifuentes Lozada",
+        "url": "https://www.linkedin.com/in/andres-cifuentes-lozada/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Avaall",
+        "url": "https://github.com/Avaall"
+      }
+    ]
+  },
+  "about": "Con una sólida trayectoria en el desarrollo web y de software, he adquirido valiosos conocimientos y habilidades a lo largo de los años. Mi experiencia en diversos proyectos me ha permitido desarrollar una perspectiva experta en el campo. Disfruto trabajando en equipo, donde puedo aportar mi experiencia para lograr resultados exitosos. Siempre estoy atento a las últimas tendencias y tecnologías emergentes, lo que me permite adaptarme rápidamente y mantenerme actualizado en un entorno dinámico. Mi enfoque constante en el aprendizaje y la mejora continua me ha permitido ofrecer soluciones de alta calidad y seguir creciendo profesionalmente en el apasionante mundo del desarrollo web y de software.",
+  "skills": [
+    {
+      "name": "Vue.js",
+      "level": "",
+      "url": "https://vuejs.org/"
+    },
+    {
+      "name": "React",
+      "level": "",
+      "url": "https://react.dev/"
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "url": "https://nodejs.org/en"
+    },
+    {
+      "name": "Express",
+      "level": "",
+      "url": "https://expressjs.com/"
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "",
+      "url": "https://www.postgresql.org/"
+    },
+    {
+      "name": "HTML",
+      "level": "",
+      "url": "https://es.wikipedia.org/wiki/JavaScript"
+    },
+    {
+      "name": "CSS",
+      "level": "",
+      "url": "https://en.wikipedia.org/wiki/CSS"
+    },
+    {
+      "name": "JavaScript",
+      "level": "",
+      "url": "https://es.wikipedia.org/wiki/JavaScript"
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "url": "https://www.php.net/"
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "url": "https://www.mysql.com/"
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "url": "https://www.python.org/"
+    },
+    {
+      "name": "MongoDB",
+      "level": "",
+      "url": "https://www.mongodb.com/es"
+    }
+  ],
+  "experiences": [
+    {
+      "name": "Aulas Amigas.",
+      "position": "Gestor de plataformas E-learning",
+      "url": "https://aulasamigas.com/",
+      "startDate": "04-09-2023",
+      "endDate": "Actual",
+      "summary": "Como especialista en desarrollo de software, mi aporte a la empresa se refleja en la creación de soluciones innovadoras y eficientes que impulsan el crecimiento y la competitividad. Mis funciones incluyen el diseño, desarrollo y mantenimiento de aplicaciones, así como la colaboración estrecha con equipos multidisciplinarios para garantizar la entrega de productos de alta calidad dentro de plazos establecidos."
+    },
+    {
+      "name": "Instituto Tecnológico Metropolitan (ITM)",
+      "position": "Desarrollador",
+      "url": "https://www.itm.edu.co/",
+      "startDate": "14-01-2023",
+      "endDate": "11-11-2023",
+      "summary": "Desarrollo cursos en la plataforma E-Learning Moodle de la Escuela Virtual de Aprendizaje de la Alcaldía de Medellín. Implemento funcionalidades en PHP y creo complementos para los cursos utilizando herramientas como Vue.js o React. Mi labor contribuye a fortalecer la educación virtual y brindar experiencias de aprendizaje efectivas y accesibles para la comunidad."
+    },
+    {
+      "name": "Fundación Universitaria Católica del Norte (FUCN)",
+      "position": "Desarrollador",
+      "url": "https://ucn.edu.co/",
+      "startDate": "27-11-2023",
+      "endDate": "31-12-2023",
+      "summary": "Desarrollo de cursos en la plataforma E-Learning Moodle de la Escuela Virtual de Aprendizaje de la alcaldía de Medellín, implementación de funcionalidades PHP y creación complementos para los cursos con herramientas como Vue.js o React."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Escuela Virtual de Aprendizaje (EVA)",
+      "isActive": true,
+      "description": "La Escuela Virtual de Aprendizaje es un espacio para compartir, explorar y descubrir conocimientos.",
+      "technologies": ["Vue.js"],
+      "url": "https://escuelavirtual.medellin.gov.co/"
+    },
+    {
+      "name": "DomiSAI",
+      "isActive": false,
+      "description": "Plataforma online exclusiva para solicitar domicilios en San Andrés Isla de Colombia.",
+      "technologies": [
+        "React",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "url": "https://font-domisai.onrender.com/"
+    },
+    {
+      "name": "OVA (Objetos Virtuales de Aprendizaje)",
+      "isActive": true,
+      "description": "Colección de recursos educativos.",
+      "technologies": ["Vue.js"],
+      "url": "#"
+    },
+    {
+      "name": "Andrés Cifuentes Lozada | Portafolio",
+      "isActive": true,
+      "description": "Espacio para conocer a Andrés Cifuentes.",
+      "technologies": ["React"],
+      "url": "#"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Servicio Nacional de Aprendizaje (SENA)",
+      "url": "https://www.sena.edu.co/es-co/Paginas/default.aspx",
+      "title": "Técnico en desarrollo de software",
+      "studyTyoe": "Pregrado",
+      "startDate": "Enero 2018",
+      "endDate": "Diciembre 2019"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Desarrollador web UX/UI",
+      "issuer": "NextU",
+      "url": "https://www.nextu.com/"
+    },
+    {
+      "name": "Diagramación con CSS",
+      "issuer": "NextU",
+      "url": "https://www.nextu.com/"
+    },
+    {
+      "name": "Vue.js optimizado para Front End",
+      "issuer": "NextU",
+      "url": "https://www.nextu.com/"
+    },
+    {
+      "name": "Bootstrap",
+      "issuer": "NextU",
+      "url": "https://www.nextu.com/"
+    },
+    {
+      "name": "Diagramación en JavaScript",
+      "issuer": "NextU",
+      "url": "https://www.nextu.com/"
+    }
+  ],
+  "lenguages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "English",
+      "fluency": "Basico"
+    }
+  ],
+  "references": [
+    {
+      "name": "Sandra Milena Chica Gómez",
+      "url": "https://www.linkedin.com/in/sandra-milena-chica-gomez/",
+      "reference": "Quiero expresar mi gratitud por tu constante dedicación al proyecto. Tu habilidad para adaptarte rápidamente a nuevas tecnologías y tu enfoque meticuloso en la resolución de problemas son ejemplos notables de tu compromiso con la excelencia en nuestro equipo."
+    },
+    {
+      "name": "Ana Milena Taborda Muñoz",
+      "url": "https://www.linkedin.com/in/ana-milena-taborda-mu%C3%B1oz-56254ba6/",
+      "reference": "Tu dedicación al desarrollo de soluciones innovadoras y tu enfoque proactivo para resolver desafíos han sido invaluables para nuestro equipo. Además, tu habilidad para colaborar y comunicar eficazmente demuestra un alto nivel de profesionalismo y compromiso."
+    },
+    {
+      "name": "Juan Daniel Cifuentes Diez",
+      "url": "https://www.linkedin.com/in/juan-daniel-cifuentes-diez-3a30451a/",
+      "reference": "Tu dedicación y entusiasmo son un verdadero motor para nuestro equipo. Sigue brillando con tu compromiso y positividad. Eres un activo invaluable para nosotros."
+    }
+  ]
+}
