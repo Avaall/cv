@@ -1,19 +1,20 @@
 import { experiences } from '../cv.json'
+import style from '../styles/experience.module.css'
 
 export function Experience () {
   return (
-    <section className='experiences'>
-      <h1 className='title'>Experiencia</h1>
+    <section className={ style.experiences }>
+      <h1 className={ style.title }>Experiencia</h1>
       {
         experiences.map((experience, index) => {
           return (
-            <div key={ index } className='experience'>
-              <a href={ experience.url } target='_blank' className='link'>
-                <h3 className='name'>{ experience.name }</h3>
+            <div key={ index } className={ style.experience }>
+              <a href={ experience.url } target='_blank' className={ style.link }>
+                <h3 className={ style.name }>{ experience.name }</h3>
               </a>
-              <p className='position'>{ experience.position }</p>
-              <p className='time'>{ experience.startDate } / { experience.endDate }</p>
-              <p className='description'>{ experience.summary }</p>
+              <p className={ style.position }>{ experience.position }</p>
+              <p className={ style.time }>{ experience.startDate } / { experience.endDate }</p>
+              <p className={ style.description }>{ experience.summary }</p>
             </div>
           )
         })

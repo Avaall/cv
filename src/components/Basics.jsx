@@ -1,28 +1,27 @@
 import { basics } from '../cv.json'
 import GitHub from '../assets/github.svg'
 import LinkedIn from '../assets/linkedin.svg'
+import style from '../styles/basics.module.css'
 
 const imagesLogoProfiles = [LinkedIn, GitHub]
 
 export function Basics () {
   
   return (
-    <section className='basics'>
-      <figure className='perfil'>
-      <img src={basics.image} loading='eager' alt="Foto perfil Andrés Cifuentes Lozada" title='Andrés Cifuentes Lozada' className='image' />
+    <section className={ style.basics }>
+      <figure className={ style.perfil }>
+        <img src={basics.image} loading='eager' alt="Foto perfil Andrés Cifuentes Lozada" title='Andrés Cifuentes Lozada' className={ style.image } />
       </figure>
-      <div className='information'>
-        <h1 className='title'>Web Developer</h1>
-        <p className="email">
-          <a href='' className='link' target='_blank'>{ basics.email }</a>
-        </p>
-        <p className="label">{ basics.label }</p>
-        <div className="profiles">
+      <div className={ style.information }>
+        <h1 className={ style.title }>Web Developer</h1>
+        <p className={ style.email }>{ basics.email }</p>
+        <p className={ style.label }>{ basics.label }</p>
+        <div className={ style.profiles }>
           {
             basics.profiles.map((profile, index) => {
               return (
-                <a key={ index } href={ profile.url } target='_blank' className={ 'profile ' + profile.network}>
-                  <img src={ imagesLogoProfiles[index] } alt={ profile.network } title={ profile.network } className='logo' />
+                <a key={ index } href={ profile.url } target='_blank' className={ style.profile + ' ' + profile.network}>
+                  <img src={ imagesLogoProfiles[index] } alt={ profile.network } title={ profile.network } className={ style.logo } />
                 </a>
               )
             })

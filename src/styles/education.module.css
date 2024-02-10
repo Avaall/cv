@@ -1,0 +1,40 @@
+.education {
+  padding: 0 .5rem;
+  width: 100%;
+  max-width: 1276px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.title {
+  font-size: 2rem;
+  color: var(--coffee);
+}
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--black);
+}
+.link {
+  display: block;
+  width: fit-content;
+}
+.institucion {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.link:hover .institucion {
+  text-decoration: underline;
+}
+.time {
+  font-size: .8rem;
+  margin-bottom: .5rem;
+}
+@media print {
+  .name {
+    font-size: 15px !important;
+  }
+}

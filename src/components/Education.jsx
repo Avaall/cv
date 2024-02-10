@@ -1,18 +1,19 @@
 import { education } from '../cv.json'
+import style from '../styles/education.module.css'
 
 export function Education () {
   return (
-    <section className='education'>
-      <h1 className='title'>Educación</h1>
+    <section className={ style.education }>
+      <h1 className={ style.title }>Educación</h1>
       {
         education.map((edu, index) => {
           return (
-            <div key={ index } className="educa">
-              <h3 className='name'>{ edu.title }</h3>
-              <a href={ edu.url } target='_blank' className='link'>
-                <p className='institucion'>{ edu.institution }</p>
+            <div key={ index } className={ style.educa }>
+              <h3 className={ style.name }>{ edu.title }</h3>
+              <a href={ edu.url } target='_blank' className={ style.link }>
+                <p className={ style.institucion }>{ edu.institution }</p>
               </a>
-              <p className='time'>{ edu.startDate } / { edu.endDate }</p>
+              <p className={ style.time }>{ edu.startDate } / { edu.endDate }</p>
             </div>
           )
         })

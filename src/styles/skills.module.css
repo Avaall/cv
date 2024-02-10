@@ -1,0 +1,26 @@
+.skills {
+  padding: 0 .5rem;
+  width: 100%;
+  max-width: 1276px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.link {
+  padding: .5rem 1rem;
+  border: 1px solid var(--coffee);
+  border-radius: 30px;
+  user-select: none;
+}
+.link:hover {
+  background: var(--coffee);
+}
+.link:hover .skill {
+  color: var(--white);
+}
+.skill {
+  color: var(--coffee);
+}

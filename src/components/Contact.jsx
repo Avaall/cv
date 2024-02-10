@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import style from '../styles/contact.module.css'
 
 export function Contact () {
 
@@ -17,12 +18,12 @@ export function Contact () {
       .then(
         () => {
           form.current.reset()
-          setClassMessage('success')
+          setClassMessage('successFormSend')
           setMessage('Mensaje enviado correctamente.')
         },
         (error) => {
           form.current.reset()
-          setClassMessage('error')
+          setClassMessage('errorFormSend')
           console.log('FAILED...', error.text)
           setMessage('Error al enviar el correo.')
         },
@@ -30,32 +31,32 @@ export function Contact () {
   }
 
   return (
-    <section className="contact">
-      <h1 className="title">Contactame</h1>
-      <form onSubmit={ sendEmail } ref={ form } className='form'>
+    <section className={ style.contact }>
+      <h1 className={ style.title }>Contactame</h1>
+      <form onSubmit={ sendEmail } ref={ form } className={ style.form }>
         <input
           type="email"
           name="email"
-          className='email'
+          className={ style.email }
           placeholder='Correo'
           required
         />
         <input
           type="text"
           name="subject"
-          className='asunto'
+          className={ style.asunto }
           placeholder='Asunto'
           required
         />
         <textarea
           name="message"
-          className='mensaje'
+          className={ style.mensaje }
           placeholder='Mensaje'
           required
         />
-        <button className='submit' type="submit">Enviar</button>
+        <button className={ style.submit } type="submit">Enviar</button>
       </form>
-      <p className={ "message " + classMessage }>{ message }</p>
+      <p className={ style.message + ' ' + classMessage }>{ message }</p>
     </section>
   )
 }

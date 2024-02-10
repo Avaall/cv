@@ -7,26 +7,27 @@ import Vue from '../assets/vue.svg'
 import Node from '../assets/node.svg'
 import React from '../assets/react.svg'
 import Postgres from '../assets/pg.svg'
+import style from '../styles/projects.module.css'
 
 const imagesProjects = [Eva, DomiSAI, Ova, Portafolio]
 
 export function Projects () {
   return (
-    <section className='projects'>
-      <h1 className='title'>Projectos</h1>
-      <div className='content'>
+    <section className={ style.projects }>
+      <h1 className={ style.title }>Projectos</h1>
+      <div className={ style.content }>
         {
           projects.map((project, index) => {
             return (
-              <div key={ index } className="project">
-                <a href={ project.url } title={ project.name } target='_blank' className='link'>
-                  <img src={ imagesProjects[index] } alt={ project.name } title={ project.name } className='image' />
+              <div key={ index } className={ style.project }>
+                <a href={ project.url } title={ project.name } target='_blank' className={ style.link }>
+                  <img src={ imagesProjects[index] } alt={ project.name } title={ project.name } className={ style.image } />
                 </a>
-                <a href={ project.url } title={ project.name } target='_blank' className='link-text'>
-                  <p className="name">{ project.name }</p>
+                <a href={ project.url } title={ project.name } target='_blank' className={ style.linkText }>
+                  <p className={ style.name }>{ project.name }</p>
                 </a>
-                <p className="description">{ project.description }</p>
-                <div className="technologies">
+                <p className={ style.description }>{ project.description }</p>
+                <div className={ style.technologies }>
                   {
                     project.technologies.map((technologie, index) => {
                       let logoUse = ''
@@ -47,7 +48,7 @@ export function Projects () {
                       }
 
                       return (
-                        <img key={ index } src={ logoUse } alt={ technologie } title={ technologie } className='logo' />
+                        <img key={ index } src={ logoUse } alt={ technologie } title={ technologie } className={ style.logo } />
                       )
                     })
                   }

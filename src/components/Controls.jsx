@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react'
+import style from '../styles/controls.module.css'
 
 export function Controls () {
 
-  const [lightDark, setLightDark] = useState(true)
+  const [lightDark, setLightDark] = useState('ButtonThemeLight')
 
   useEffect(() => {
     const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
 
     const handleThemeChange = (e) => {
-      if (!e.matches) setLightDark(true)
-      else setLightDark(false)
+      if (!e.matches) setLightDark('ButtonThemeLight')
+      else setLightDark('ButtonThemeDark')
     }
 
     handleThemeChange(darkModeMediaQuery)
@@ -18,7 +19,7 @@ export function Controls () {
   const setTheme = (theme) => {
     const root = document.documentElement
 
-    if (theme) {
+    if (theme === 'ButtonThemeLight') {
       root.style.setProperty('--white', '#000000')
       root.style.setProperty('--black', '#ffffff')
     } else {
@@ -26,12 +27,13 @@ export function Controls () {
       root.style.setProperty('--black', '#000000')
     }
 
-    setLightDark(!theme)
+    if (theme === 'ButtonThemeDark') setLightDark('ButtonThemeLight')
+    else setLightDark('ButtonThemeDark')
   }
 
   return (
-    <section className="controls">
-      <button onClick={ () => setTheme(lightDark) } className={"light-dark " + lightDark}></button>
+    <section className={ style.controls }>
+      <button onClick={ () => setTheme(lightDark) } title='Button theme' type='Button' className={ style.lightDark + ' ' + lightDark}></button>
     </section>
   )
 }

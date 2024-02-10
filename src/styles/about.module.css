@@ -1,0 +1,20 @@
+.about {
+  padding: 2rem .5rem;
+  width: 100%;
+  max-width: 1276px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.title {
+  font-size: 2rem;
+  color: var(--coffee);
+}
+@media print {
+  .about {
+    padding: 0 .5rem !important;
+    border-bottom: none !important;
+  }
+}
