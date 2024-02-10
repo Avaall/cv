@@ -680,6 +680,8 @@
     display: none;
   }
   .basics {
+    flex-direction: row;
+
     .perfil {
       .image {
         width: 100%;
