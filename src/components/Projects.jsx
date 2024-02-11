@@ -8,6 +8,7 @@ import Node from '../assets/node.svg'
 import React from '../assets/react.svg'
 import Postgres from '../assets/pg.svg'
 import style from '../styles/projects.module.css'
+import { LazyImage } from './Image'
 
 const imagesProjects = [Eva, DomiSAI, Ova, Portafolio]
 
@@ -21,7 +22,12 @@ export function Projects () {
             return (
               <div key={ index } className={ style.project }>
                 <a href={ project.url } title={ project.name } target='_blank' className={ style.link }>
-                  <img src={ imagesProjects[index] } loading='lazy' alt={ project.name } title={ project.name } className={ style.image } />
+                  <LazyImage
+                    src={ imagesProjects[index] }
+                    alt={ project.name }
+                    title={ project.name }
+                    className={ style.image }
+                  />
                 </a>
                 <a href={ project.url } title={ project.name } target='_blank' className={ style.linkText }>
                   <p className={ style.name }>{ project.name }</p>
@@ -48,7 +54,7 @@ export function Projects () {
                       }
 
                       return (
-                        <img key={ index } src={ logoUse } loading='lazy' alt={ technologie } title={ technologie } className={ style.logo } />
+                        <LazyImage key={ index } src={ logoUse } alt={ technologie } title={ technologie } className={ style.logo } />
                       )
                     })
                   }

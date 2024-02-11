@@ -2,6 +2,7 @@ import { basics } from '../cv.json'
 import GitHub from '../assets/github.svg'
 import LinkedIn from '../assets/linkedin.svg'
 import style from '../styles/basics.module.css'
+import { LazyImage } from './Image'
 
 const imagesLogoProfiles = [LinkedIn, GitHub]
 
@@ -21,7 +22,7 @@ export function Basics () {
             basics.profiles.map((profile, index) => {
               return (
                 <a key={ index } href={ profile.url } target='_blank' className={ style.profile + ' ' + profile.network}>
-                  <img src={ imagesLogoProfiles[index] } loading='lazy' alt={ profile.network } title={ profile.network } className={ style.logo } />
+                  <LazyImage src={ imagesLogoProfiles[index] } alt={ profile.network } title={ profile.network } className={ style.logo } />
                 </a>
               )
             })
