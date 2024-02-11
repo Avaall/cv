@@ -12,12 +12,6 @@
     --black: #ffffff;
   }
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    --white: #ffffff;
-    --black: #000000;
-  }
-}
 
 #root {
   width: 100%;
