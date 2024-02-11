@@ -1,35 +1,49 @@
 import { useState, useEffect, useRef } from 'react'
 import PropTypes from 'prop-types'
 
-export function LazyImage ({ src, alt, title, className }) {
+export function LazyImage({ src, alt, title, className }) {
+  const [isLoading, setIsLoading] = useState(true)
   const [imageSrc, setImageSrc] = useState(null)
   const imgRef = useRef(null)
   const observer = useRef(null)
 
   useEffect(() => {
-    const imgElement = imgRef.current
-
     observer.current = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !imageSrc) {
+          setIsLoading(true)
           setImageSrc(src)
           observer.current.unobserve(entry.target)
         }
       })
     })
 
-    if (imgElement) {
+    const imgElement = imgRef.current
+
+    if (imgElement && observer.current) {
       observer.current.observe(imgElement)
     }
 
     return () => {
-      if (observer.current && imgElement) {
+      if (imgElement && observer.current) {
         observer.current.unobserve(imgElement)
       }
     }
-  }, [src])
+  }, [src, imageSrc])
 
-  return <img ref={ imgRef } src={ imageSrc } alt={ alt } title={ title } className={ className } />
+  if (imageSrc) {
+    const img = new Image()
+    img.src = imageSrc
+    img.onload = () => setIsLoading(false)
+    img.onerror = () => setIsLoading(false)
+  }
+
+  return (
+    <>
+      {isLoading && <div className='CargandoImage'></div>}
+      <img ref={imgRef} src={imageSrc} alt={alt} title={title} className={className} />
+    </>
+  )
 }
 
 LazyImage.propTypes = {

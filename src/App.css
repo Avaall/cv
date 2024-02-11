@@ -27,7 +27,30 @@
     text-decoration: underline;
   }
 }
-
+.CargandoImage {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.CargandoImage::after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  position: absolute;
+  border-left: 2px solid var(--coffee);
+  border-right: 2px solid var(--coffee);
+  top: -.5rem;
+  animation: aa infinite 1s linear;
+}
+@keyframes aa {
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 @media print {
   .portafolio {

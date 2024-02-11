@@ -54,7 +54,7 @@ export function Projects () {
                       }
 
                       return (
-                        <LazyImage key={ index } src={ logoUse } alt={ technologie } title={ technologie } className={ style.logo } />
+                        <img key={ index } src={ logoUse } loading='lazy' alt={ technologie } title={ technologie } className={ style.logo } />
                       )
                     })
                   }
