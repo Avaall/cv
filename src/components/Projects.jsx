@@ -21,7 +21,7 @@ export function Projects () {
             return (
               <div key={ index } className={ style.project }>
                 <a href={ project.url } title={ project.name } target='_blank' className={ style.link }>
-                  <img src={ imagesProjects[index] } alt={ project.name } title={ project.name } className={ style.image } />
+                  <img src={ imagesProjects[index] } loading='lazy' alt={ project.name } title={ project.name } className={ style.image } />
                 </a>
                 <a href={ project.url } title={ project.name } target='_blank' className={ style.linkText }>
                   <p className={ style.name }>{ project.name }</p>
@@ -48,7 +48,7 @@ export function Projects () {
                       }
 
                       return (
-                        <img key={ index } src={ logoUse } alt={ technologie } title={ technologie } className={ style.logo } />
+                        <img key={ index } src={ logoUse } loading='lazy' alt={ technologie } title={ technologie } className={ style.logo } />
                       )
                     })
                   }

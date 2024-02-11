@@ -10,7 +10,7 @@ export function Basics () {
   return (
     <section className={ style.basics }>
       <figure className={ style.perfil }>
-        <img src={basics.image} loading='eager' alt="Foto perfil Andrés Cifuentes Lozada" title='Andrés Cifuentes Lozada' className={ style.image } />
+        <img src={basics.image} loading='lazy' alt="Foto perfil Andrés Cifuentes Lozada" title='Andrés Cifuentes Lozada' className={ style.image } />
       </figure>
       <div className={ style.information }>
         <h1 className={ style.title }>Web Developer</h1>
@@ -21,7 +21,7 @@ export function Basics () {
             basics.profiles.map((profile, index) => {
               return (
                 <a key={ index } href={ profile.url } target='_blank' className={ style.profile + ' ' + profile.network}>
-                  <img src={ imagesLogoProfiles[index] } alt={ profile.network } title={ profile.network } className={ style.logo } />
+                  <img src={ imagesLogoProfiles[index] } loading='lazy' alt={ profile.network } title={ profile.network } className={ style.logo } />
                 </a>
               )
             })
