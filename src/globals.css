@@ -74,4 +74,7 @@ button {
   h1 {
     font-size: 18px !important;
   }
+  #root {
+    gap: 1rem;
+  }
 }

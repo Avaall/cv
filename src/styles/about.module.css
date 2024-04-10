@@ -16,5 +16,6 @@
   .about {
     padding: 0 .5rem !important;
     border-bottom: none !important;
+    gap: .5rem;
   }
 }

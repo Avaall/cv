@@ -52,16 +52,6 @@
 }
 @media print {
   .references {
-    padding: 0 !important;
-  }
-  .ref {
-    flex-direction: column !important;
-  }
-  .reference {
-    box-shadow: none !important;
-    padding: 0 !important;
-  }
-  .name {
-    font-size: 15px !important;
+    display: none;
   }
 }
