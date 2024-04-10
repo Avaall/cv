@@ -92,11 +92,11 @@
       "position": "Gestor de plataformas E-learning",
       "url": "https://aulasamigas.com/",
       "startDate": "04-09-2023",
-      "endDate": "Actual",
+      "endDate": "04-03-2024",
       "summary": "Como especialista en desarrollo de software, mi aporte a la empresa se refleja en la creación de soluciones innovadoras y eficientes que impulsan el crecimiento y la competitividad. Mis funciones incluyen el diseño, desarrollo y mantenimiento de aplicaciones, así como la colaboración estrecha con equipos multidisciplinarios para garantizar la entrega de productos de alta calidad dentro de plazos establecidos."
     },
     {
-      "name": "Instituto Tecnológico Metropolitan (ITM)",
+      "name": "Instituto Tecnológico Metropolitano (ITM)",
       "position": "Desarrollador",
       "url": "https://www.itm.edu.co/",
       "startDate": "14-01-2023",
@@ -104,7 +104,7 @@
       "summary": "Desarrollo cursos en la plataforma E-Learning Moodle de la Escuela Virtual de Aprendizaje de la Alcaldía de Medellín. Implemento funcionalidades en PHP y creo complementos para los cursos utilizando herramientas como Vue.js o React. Mi labor contribuye a fortalecer la educación virtual y brindar experiencias de aprendizaje efectivas y accesibles para la comunidad."
     },
     {
-      "name": "Fundación Universitaria Católica del Norte (FUCN)",
+      "name": "Fundación Universitaria Católica del Norte (UCN)",
       "position": "Desarrollador",
       "url": "https://ucn.edu.co/",
       "startDate": "27-11-2023",
@@ -190,7 +190,7 @@
     },
     {
       "language": "English",
-      "fluency": "Basico"
+      "fluency": "Intermedio"
     }
   ],
   "references": [

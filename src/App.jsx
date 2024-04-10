@@ -24,9 +24,6 @@ function App() {
       <CertificatesLenguages />
       <References />
       <Contact />
-      <section className="portafolio">
-        <a href="https://portafolio-andres.onrender.com/" target='_self' className='url'>Conoce mi portafolio</a>
-      </section>
     </>
   )
 }
